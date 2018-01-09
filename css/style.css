@@ -1,9 +1,9 @@
 body {
-    direction: ltr !important;
+	direction: ltr !important;
 }
 
 body.bs-mirror {
-    direction: rtl !important;
+	direction: rtl !important;
 }
 
 .navbar-default {
@@ -19,7 +19,7 @@ body.bs-mirror {
 }
 
 .header {
-    margin-top: 50px;
+	margin-top: 50px;
     padding: 55px 30px 75px;
     color: white;
     text-shadow: 0 1px 0 rgba(0,0,0,.1);
@@ -33,13 +33,13 @@ body.bs-mirror {
 }
 
 .header h1{
-    margin-top: 0;
-    font-size: 95px;
-    font-weight: bold;
+	margin-top: 0;
+	font-size: 95px;
+	font-weight: bold;
 }
 
 .header p.headline {
-    font-size: 24px;
+	font-size: 24px;
 }
 
 .header p.sub-headline {
@@ -63,16 +63,25 @@ body.bs-mirror {
     border-color: white;
 }
 
+.bs-mirror .header p, .bs-mirror .header a, .bs-mirror .header button{
+	direction: ltr;
+	text-align: right;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
 .container-main {
-    padding: 40px 15px;
+	padding: 40px 15px;
 }
 
 .container .radio {
-    text-align: center;
+	text-align: center;
 }
 
 .container .radio label {
-    margin: 0 20px;
+	margin: 0 20px;
 }
 
 .example-box {
@@ -105,23 +114,38 @@ body.bs-mirror {
     right: 15px;
 }
 
+.mirror-button {
+	display: none;
+	position: fixed;
+	bottom:25px;
+	right:25px;
+	z-index: 99;
+}
 
 button.btn-outline-inverse#bs-mirror-btn-float {
-    position: fixed;
-    background: #6f5499;
-    bottom:25px;
-    right:25px;
-    z-index: 99;
+	background: #6f5499;
 }
 
-.bs-mirror button.btn-outline-inverse#bs-mirror-btn-float {
-    left: 25px;
-    right:0;
+button#bs-mirror-btn-float:focus {
+    outline-width: 0;
 }
 
+.bs-mirror .mirror-button {
+	left: 25px;
+	right: auto;
+}
 
 ul.bs-sidebar  {
-    padding: 0 20px !important;
+	padding: 0 20px !important;
+}
+
+.affix {
+  top: 80px;
+  z-index: 9999 !important;
+}
+
+.affix-bottom {
+  position: absolute;
 }
 
 .bs-sidebar.nav-pills>li>a {
@@ -140,7 +164,6 @@ ul.bs-sidebar  {
     color: #563d7c;
 }
 
-
 .bs-sidebar.nav-stacked>li {
     float: none;
 }
@@ -157,7 +180,6 @@ ul.bs-sidebar  {
     border-left: none ;
     border-right: solid 2px transparent;
 }
-
 
 .bs-sidebar ul.dropdown-menu {
     padding: 0;
@@ -186,39 +208,44 @@ ul.bs-sidebar  {
 }
 
 .footer {
-    margin-top: 50px;
-    padding: 50px 0;
-    background-color: #2a2730;
-    color: #99979c;
+	margin-top: 50px;
+	padding: 50px 0;
+	background-color: #2a2730;
+	color: #99979c;
 }
 
 .footer a{
-    color: white;
+	color: white;
 }
 
-
 @media screen and (max-width: 767px) {
-    .header {
-        padding: 50px 5px 65px;
-    }   
-    .header h1 {
-        font-size: 50px;
-    }
-    .header p {
-        font-size: 22px;
-    }
-    button.btn-outline-inverse#bs-mirror-btn-float {
-        bottom:0;
-        right:auto;
-        width: 100%;
-    }
-    .bs-mirror button.btn-outline-inverse#bs-mirror-btn-float {
-        left: auto;
-        right:auto;
-    }
+	.header {
+	    padding: 50px 5px 65px;
+	}	
 
-    #button-groups .example-box:last-child .btn-group, #tooltip .example-box a.btn.btn-primary, #popover .example-box a.btn.btn-primary {
-        margin-bottom: 10px;
-    }
+	.header h1 {
+	    font-size: 50px;
+	}
+
+	.header p {
+	    font-size: 22px;
+	}
+
+	button.btn-outline-inverse#bs-mirror-btn-float {
+		border: none;
+    	border-radius: 0;
+		bottom:0;
+		right:auto;
+		width: 100%;
+	}
+
+	.bs-mirror button.btn-outline-inverse#bs-mirror-btn-float {
+		left: auto;
+		right:auto;
+	}
+
+	#button-groups .example-box:last-child .btn-group, #tooltip .example-box a.btn.btn-primary, #popover .example-box a.btn.btn-primary {
+	    margin-bottom: 10px;
+	}
 
 }
