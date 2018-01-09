@@ -2,7 +2,7 @@ body {
     direction: ltr !important;
 }
 
-body.mirror {
+body.bs-mirror {
     direction: rtl !important;
 }
 
