@@ -1,9 +1,9 @@
 body {
-	direction: ltr !important;
+    direction: ltr !important;
 }
 
 body.bs-mirror {
-	direction: rtl !important;
+    direction: rtl !important;
 }
 
 .navbar-default {
@@ -19,8 +19,8 @@ body.bs-mirror {
 }
 
 .header {
-	margin-top: 50px;
-    padding: 55px 30px 75px;
+    margin-top: 50px;
+    padding: 55px 0 75px;
     color: white;
     text-shadow: 0 1px 0 rgba(0,0,0,.1);
     background-color: #6f5499;
@@ -33,13 +33,13 @@ body.bs-mirror {
 }
 
 .header h1{
-	margin-top: 0;
-	font-size: 95px;
-	font-weight: bold;
+    margin-top: 0;
+    font-size: 95px;
+    font-weight: bold;
 }
 
 .header p.headline {
-	font-size: 24px;
+    font-size: 24px;
 }
 
 .header p.sub-headline {
@@ -64,8 +64,8 @@ body.bs-mirror {
 }
 
 .bs-mirror .header p, .bs-mirror .header a, .bs-mirror .header button{
-	direction: ltr;
-	text-align: right;
+    direction: ltr;
+    text-align: right;
 }
 
 .section {
@@ -73,15 +73,15 @@ body.bs-mirror {
 }
 
 .container-main {
-	padding: 40px 15px;
+    padding: 40px 15px;
 }
 
 .container .radio {
-	text-align: center;
+    text-align: center;
 }
 
 .container .radio label {
-	margin: 0 20px;
+    margin: 0 20px;
 }
 
 .example-box {
@@ -115,15 +115,15 @@ body.bs-mirror {
 }
 
 .mirror-button {
-	display: none;
-	position: fixed;
-	bottom:25px;
-	right:25px;
-	z-index: 99;
+    display: none;
+    position: fixed;
+    bottom:25px;
+    right:25px;
+    z-index: 99;
 }
 
 button.btn-outline-inverse#bs-mirror-btn-float {
-	background: #6f5499;
+    background: #6f5499;
 }
 
 button#bs-mirror-btn-float:focus {
@@ -131,12 +131,12 @@ button#bs-mirror-btn-float:focus {
 }
 
 .bs-mirror .mirror-button {
-	left: 25px;
-	right: auto;
+    left: 25px;
+    right: auto;
 }
 
 ul.bs-sidebar  {
-	padding: 0 20px !important;
+    padding: 0 20px !important;
 }
 
 .affix {
@@ -208,48 +208,48 @@ ul.bs-sidebar  {
 }
 
 .footer {
-	margin-top: 50px;
-	padding: 50px 0;
-	background-color: #2a2730;
-	color: #99979c;
+    margin-top: 50px;
+    padding: 50px 0;
+    background-color: #2a2730;
+    color: #99979c;
 }
 
 .footer a{
-	color: white;
+    color: white;
 }
 
 @media screen and (max-width: 767px) {
-	.header {
-	    padding: 50px 5px 65px;
-	}	
+    .header {
+        padding: 50px 5px 65px;
+    }   
 
-	.header h1 {
-	    font-size: 50px;
-	}
+    .header h1 {
+        font-size: 50px;
+    }
 
-	.header p {
-	    font-size: 22px;
-	}
+    .header p {
+        font-size: 22px;
+    }
 
-	.mirror-button {
-		bottom:0;
-		right:auto;
-		width: 100%;
-	}
+    .mirror-button {
+        bottom:0;
+        right:auto;
+        width: 100%;
+    }
 
-	button.btn-outline-inverse#bs-mirror-btn-float {
-		border: none;
-    	border-radius: 0;
-    	width: 100%;
-	}
+    button.btn-outline-inverse#bs-mirror-btn-float {
+        border: none;
+        border-radius: 0;
+        width: 100%;
+    }
 
-	.bs-mirror .mirror-button {
-		left: auto;
-		right:auto;
-	}
+    .bs-mirror .mirror-button {
+        left: auto;
+        right:auto;
+    }
 
-	#button-groups .example-box:last-child .btn-group, #tooltip .example-box a.btn.btn-primary, #popover .example-box a.btn.btn-primary {
-	    margin-bottom: 10px;
-	}
+    #button-groups .example-box:last-child .btn-group, #tooltip .example-box a.btn.btn-primary, #popover .example-box a.btn.btn-primary {
+        margin-bottom: 10px;
+    }
 
 }
